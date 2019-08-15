@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/cv",
   siteMetadata: {
     title: `Name Surname`,
     description: `I am a front-end developer with 2 years of experience`,
