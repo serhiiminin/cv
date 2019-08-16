@@ -1,14 +1,9 @@
-const indexPage = require('./data/index');
-
 module.exports = {
   pathPrefix: "/cv",
   siteMetadata: {
-    title: `Name Surname`,
+    title: `Serhii Minin`,
     description: `I am a front-end developer with 2 years of experience`,
     author: `@serhiiminin`,
-    pages: {
-      index: indexPage,
-    }
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

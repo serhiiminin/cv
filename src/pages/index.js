@@ -1,15 +1,25 @@
-import React from "react";
-import Layout from "../components/layout";
-import Image from "../components/image";
-import SEO from "../components/seo";
+import React from "react"
+import {
+  Layout,
+  Seo,
+  Education,
+  Skills,
+  Experience,
+  Languages,
+  Summary,
+  Contacts,
+} from "../components"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="CV" />
-    <h1>Home</h1>
-    <p>Initial text.</p>
-    <Image />
+    <Seo title="CV"/>
+    <Contacts/>
+    <Summary/>
+    <Skills/>
+    <Experience/>
+    <Education/>
+    <Languages/>
   </Layout>
-);
+)
 
 export default IndexPage
