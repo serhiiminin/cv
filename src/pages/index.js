@@ -6,12 +6,9 @@ import SEO from "../components/seo";
 const IndexPage = () => (
   <Layout>
     <SEO title="CV" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
+    <h1>Home</h1>
+    <p>Initial text.</p>
+    <Image />
   </Layout>
 );
 
