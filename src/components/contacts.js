@@ -1,8 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { MdPrint } from "react-icons/md"
-import { FaTwitter, FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa"
 import styled from "styled-components"
+import SocialBlock from "./social-block"
+import IconPrint from "./icon-print"
 import Image from "./image"
 
 const Section = styled.section`
@@ -13,33 +13,10 @@ const Section = styled.section`
 `
 
 const ImageWrapper = styled.div`
-  height: 250px;
-  width: 250px;
-  border-radius: 8px;
+  height: 25rem;
+  width: 25rem;
+  border-radius: 1rem;
   overflow: hidden;
-`
-
-const SocialWrapper = styled.div`
-  display: flex;
-  flex-flow: row wrap;  
-`
-
-const SocialLink = styled.a`
-  text-decoration: none;
-  color: gray;
-  font-size: 26px;
-  margin-right: 10px;
-`
-
-const PrintIcon = styled(props => <MdPrint {...props} />)`
-  font-size: 26px;
-  color: gray;
-  &:hover {
-    cursor: pointer;
-  }
-  @media print {
-    display: none;
-  }
 `
 
 const Contacts = ({ contacts }) => {
@@ -56,16 +33,22 @@ const Contacts = ({ contacts }) => {
       <div>
         <h1>{name}</h1>
         <h2>{position}</h2>
-        <div>Location: {location}</div>
-        <div>Phone: {<a href={`tel:${phone}?call`}>{phone}</a>}</div>
-        <div>Email: {<a href={`mailto:${email}`}>{email}</a>}</div>
-        <SocialWrapper>
-          <SocialLink href={linkedin} target='_blank'><FaLinkedin/></SocialLink>
-          <SocialLink href={github} target='_blank'><FaGithub/></SocialLink>
-          <SocialLink href={twitter} target='_blank'><FaTwitter/></SocialLink>
-          <SocialLink href={telegram} target='_blank'><FaTelegram/></SocialLink>
-        </SocialWrapper>
-        <PrintIcon onClick={onPrint}/>
+        <div>
+          <dl>
+            <dt>Location:</dt>
+            <dd>{location}</dd>
+          </dl>
+          <dl>
+            <dt>Phone:</dt>
+            <dd><a href={`tel:${phone}?call`}>{phone}</a></dd>
+          </dl>
+          <dl>
+            <dt>Email:</dt>
+            <dd><a href={`mailto:${email}`}>{email}</a></dd>
+          </dl>
+        </div>
+        <SocialBlock github={github} linkedin={linkedin} telegram={telegram} twitter={twitter}/>
+        <IconPrint onClick={onPrint}/>
       </div>
     </Section>
   )
