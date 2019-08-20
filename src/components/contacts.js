@@ -37,12 +37,8 @@ const Contacts = ({ contacts }) => {
           <dl>
             <dt>Location:</dt>
             <dd>{location}</dd>
-          </dl>
-          <dl>
             <dt>Phone:</dt>
             <dd><a href={`tel:${phone}?call`}>{phone}</a></dd>
-          </dl>
-          <dl>
             <dt>Email:</dt>
             <dd><a href={`mailto:${email}`}>{email}</a></dd>
           </dl>
