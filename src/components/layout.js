@@ -1,10 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Container from "./container"
-import "./layout.css"
+import GlobalStyle from "./global-styles"
+import { Normalize } from "styled-normalize"
 
 const Layout = ({ children }) => (
   <Container>
+    <Normalize/>
+    <GlobalStyle/>
     <main>{children}</main>
   </Container>
 )
