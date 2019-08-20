@@ -8,14 +8,18 @@ const Title = styled.h2`
   margin: 0 0 .7rem;
 `
 
+const TitleText = styled.span`
+  margin-left: 4px;
+`;
+
 const Data = styled.div`
-  padding: .7rem 0;
+  padding: .5rem 0;
   margin-bottom: 1rem;
 `;
 
 const Section = ({ title, icon, children }) => (
   <section>
-    <Title>{icon}<span>{title}</span></Title>
+    <Title>{icon}<TitleText>{title}</TitleText></Title>
     <Data>{children}</Data>
   </section>
 )

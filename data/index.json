@@ -1,0 +1,18 @@
+{
+  "contacts": {
+    "name": "Serhii Minin",
+    "position": "Front-end developer",
+    "location": "Ukraine, Kyiv",
+    "phone": "+380661228671",
+    "email": "minin.serhii@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/serhiiminin/",
+    "github": "https://github.com/serhiiminin",
+    "twitter": "https://twitter.com/serhiiminin",
+    "telegram": "https://t.me/serhiiminin"
+  },
+  "summary": "Passionate front-end developer who has been coding for the Web since 2016. I am in love with beautiful, robust and fast UIs. My experience includes working with SPA built on React and maintaining internal vanilla JS libraries.  The main goal that I have is to work with interesting projects in a team of professionals where I will bring tangible benefits and improve my skills.",
+  "skills": [],
+  "experience": [],
+  "education": [],
+  "languages": []
+}
