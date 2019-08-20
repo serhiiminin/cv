@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { MdPrint } from "react-icons/md"
 import styled from "styled-components"
 import Image from "./image"
 
@@ -19,6 +20,9 @@ const ImageWrapper = styled.div`
 
 const Contacts = ({ contacts }) => {
   const { name, position, location, phone, email, linkedin, github, twitter, telegram } = contacts
+  const onPrint = () => {
+    window.print();
+  }
 
   return (
     <Section>
@@ -28,6 +32,7 @@ const Contacts = ({ contacts }) => {
       <div>
         <h1>{name}</h1>
         <h2>{position}</h2>
+        <MdPrint onClick={onPrint}/>
         <div>Location: {location}</div>
         <div>Phone: {phone}</div>
         <div>Email: {email}</div>
