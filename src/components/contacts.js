@@ -4,6 +4,7 @@ import styled from "styled-components"
 import SocialBlock from "./social-block"
 import IconPrint from "./icon-print"
 import Image from "./image"
+import ContactLines from "./contact-lines"
 
 const Section = styled.section`
   padding: 2rem 0;
@@ -34,14 +35,13 @@ const Contacts = ({ contacts }) => {
         <h1>{name}</h1>
         <h2>{position}</h2>
         <div>
-          <dl>
-            <dt>Location:</dt>
-            <dd>{location}</dd>
-            <dt>Phone:</dt>
-            <dd><a href={`tel:${phone}?call`}>{phone}</a></dd>
-            <dt>Email:</dt>
-            <dd><a href={`mailto:${email}`}>{email}</a></dd>
-          </dl>
+          <ContactLines
+            definitions={[
+              { title: "Location", definition: location },
+              { title: "Phone", definition: <a href={`tel:${phone}?call`}>{phone}</a> },
+              { title: "Email", definition: <a href={`mailto:${email}`}>{email}</a> },
+            ]}
+          />
         </div>
         <SocialBlock github={github} linkedin={linkedin} telegram={telegram} twitter={twitter}/>
         <IconPrint onClick={onPrint}/>
