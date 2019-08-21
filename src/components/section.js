@@ -9,11 +9,10 @@ const Title = styled.h2`
 `
 
 const TitleText = styled.span`
-  margin-left: 4px;
+  margin-left: 1rem;
 `;
 
 const Data = styled.div`
-  padding: .5rem 0;
   margin-bottom: 1rem;
 `;
 

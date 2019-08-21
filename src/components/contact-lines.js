@@ -4,12 +4,16 @@ import styled from "styled-components"
 
 const DefinitionList = styled.dl`
   display: grid;
-  grid-template-columns: 8rem auto;
-  grid-auto-rows: 3rem;
+  grid-template-columns: 9rem auto;
+  grid-auto-rows: 2.8rem;
   align-items: center;
-  margin: 1rem 0;
+  margin: 0 0 1rem;
 `
-const DefinitionTitle = styled.dt``
+
+const DefinitionTitle = styled.dt`
+  font-weight: bolder;
+`
+
 const DefinitionData = styled.dd`
   margin-inline-start: 0;
 `
