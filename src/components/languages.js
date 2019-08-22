@@ -1,13 +1,14 @@
 import React from "react"
 import { FaGlobe } from "react-icons/fa"
 import Section from "./section"
+import ContactLines from './contact-lines'
 
-const Languages = () => (
+const Languages = ({ languages }) => (
   <Section
     title="Languages"
     icon={<FaGlobe/>}
   >
-    Data about languages
+    <ContactLines definitions={languages}/>
   </Section>
 )
 

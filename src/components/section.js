@@ -29,8 +29,8 @@ const SectionCmp = ({ title, icon, children }) => {
 }
 
 SectionCmp.propTypes = {
-  icon: PropTypes.node.isRequired,
-  title: PropTypes.string.isRequired,
+  icon: PropTypes.node,
+  title: PropTypes.string,
   children: PropTypes.node.isRequired,
 }
 

@@ -27,10 +27,10 @@ const DefinitionData = styled.dd`
 
 const ContactLines = ({ definitions }) => (
   <DefinitionList>
-    {definitions.map(({ title, definition }) => (
+    {definitions.map(({ title, value }) => (
       <Fragment key={shortid.generate()}>
         <DefinitionTitle>{title}</DefinitionTitle>
-        <DefinitionData>{definition}</DefinitionData>
+        <DefinitionData>{value}</DefinitionData>
       </Fragment>
     ))}
   </DefinitionList>
@@ -40,7 +40,7 @@ ContactLines.propTypes = {
   definitions: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
-      definition: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+      value: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
     }),
   ).isRequired,
 }

@@ -49,18 +49,18 @@ const Contacts = ({ contacts }) => {
         </ImageWrapper>
         <ContactLines
           definitions={[
-            { title: <FaMapMarkerAlt/>, definition: location },
-            { title: <FaMobileAlt/>, definition: <Anchor href={`tel:${phone}?call`}>{phone}</Anchor> },
-            { title: <FaEnvelope />, definition: <Anchor href={`mailto:${email}`}>{email}</Anchor> },
+            { title: <FaMapMarkerAlt/>, value: location },
+            { title: <FaMobileAlt/>, value: <Anchor href={`tel:${phone}?call`}>{phone}</Anchor> },
+            { title: <FaEnvelope />, value: <Anchor href={`mailto:${email}`}>{email}</Anchor> },
             {
               title: <FaLinkedin/>,
-              definition: <Anchor href={linkedin} target='_blank' rel='noopener noreferrer'>{nickname}</Anchor>,
+              value: <Anchor href={linkedin} target='_blank' rel='noopener noreferrer'>{nickname}</Anchor>,
             }, {
               title: <FaGithub/>,
-              definition: <Anchor href={github} target='_blank' rel='noopener noreferrer'>{nickname}</Anchor>,
+              value: <Anchor href={github} target='_blank' rel='noopener noreferrer'>{nickname}</Anchor>,
             }, {
               title: <FaTwitter/>,
-              definition: <Anchor href={twitter} target='_blank' rel='noopener noreferrer'>{nickname}</Anchor>,
+              value: <Anchor href={twitter} target='_blank' rel='noopener noreferrer'>{nickname}</Anchor>,
             },
           ]}
         />
