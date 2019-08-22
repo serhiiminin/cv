@@ -5,9 +5,10 @@ import styled from "styled-components"
 
 const DefinitionList = styled.dl`
   display: grid;
-  grid-template-columns: 3rem auto;
+  grid-template-columns: max-content auto;
   grid-auto-rows: 3rem;
   align-items: center;
+  column-gap: 1.2rem;
   margin: 0;
 `
 
@@ -15,7 +16,7 @@ const DefinitionTitle = styled.dt`
   display: grid;  
   justify-self: start;
   align-self: center;
-  font-size: 2rem;
+  font-weight: bolder;
 `
 
 const DefinitionData = styled.dd`

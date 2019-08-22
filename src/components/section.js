@@ -9,7 +9,7 @@ const Section = styled.section`
 const Title = styled.h2`
   display: flex;
   align-items: center;
-  margin: 0 0 .6rem;
+  margin: 0 0 1.2rem;
 `
 
 const TitleText = styled.span`

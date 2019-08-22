@@ -6,6 +6,7 @@ import styled from 'styled-components';
 
 const SummaryText = styled.p`
   text-align: justify;
+  font-size: 1.8rem;
 `;
 
 const Summary = ({ summary }) => (
