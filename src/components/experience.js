@@ -1,11 +1,11 @@
 import React from "react"
-import { MdWork } from "react-icons/md"
+import { FaBriefcase } from "react-icons/fa"
 import Section from "./section"
 
 const Experience = () => (
   <Section
     title="Experience"
-    icon={<MdWork/>}
+    icon={<FaBriefcase/>}
   >
     Data about experience
   </Section>

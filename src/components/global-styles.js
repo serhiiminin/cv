@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     overflow-x: hidden;
-    background: #fafafa;
+    background: #fff;
     color: #333;
     font-family: "merriweather", sans-serif;
     font-size: 1.6rem;

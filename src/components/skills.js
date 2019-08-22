@@ -1,11 +1,11 @@
 import React from "react"
-import { MdBuild } from "react-icons/md"
+import { FaTerminal } from "react-icons/fa"
 import Section from "./section"
 
 const Skills = () => (
   <Section
     title="Skills"
-    icon={<MdBuild/>}
+    icon={<FaTerminal/>}
   >
     Data about skills
   </Section>

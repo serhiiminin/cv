@@ -1,11 +1,11 @@
 import React from "react"
-import { MdLanguage } from "react-icons/md"
+import { FaGlobe } from "react-icons/fa"
 import Section from "./section"
 
 const Languages = () => (
   <Section
     title="Languages"
-    icon={<MdLanguage/>}
+    icon={<FaGlobe/>}
   >
     Data about languages
   </Section>

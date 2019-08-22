@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { MdAccountCircle } from "react-icons/md"
+import { FaRegAddressCard } from "react-icons/fa"
 import Section from "./section"
 import styled from 'styled-components';
 
@@ -11,7 +11,7 @@ const SummaryText = styled.p`
 const Summary = ({ summary }) => (
   <Section
     title="Summary"
-    icon={<MdAccountCircle/>}
+    icon={<FaRegAddressCard/>}
   >
     <SummaryText>{summary}</SummaryText>
   </Section>
