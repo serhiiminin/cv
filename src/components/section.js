@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 
 const Section = styled.section`
-  margin-bottom: 1.2rem;
-`;
+  margin-bottom: 2.4rem;
+`
 
 const Title = styled.h2`
   display: flex;
@@ -13,24 +13,30 @@ const Title = styled.h2`
 `
 
 const TitleText = styled.span`
-  margin-left: 1rem;
-`;
+  margin-left: ${props => props.icon ? `1.2rem` : 0};
+`
 
-const Data = styled.div`
-  margin-bottom: 1rem;
-`;
+const SectionCmp = ({ title, icon, children }) => {
+  const TitleTextCmp = title && <TitleText icon={icon}>{title}</TitleText>
+  const TitleCmp = (icon || title) && <Title>{icon}{TitleTextCmp}</Title>
 
-const SectionCmp = ({ title, icon, children }) => (
-  <Section>
-    <Title>{icon}<TitleText>{title}</TitleText></Title>
-    <Data>{children}</Data>
-  </Section>
-)
+  return (
+    <Section>
+      {TitleCmp}
+      {children}
+    </Section>
+  )
+}
 
 SectionCmp.propTypes = {
   icon: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
+}
+
+SectionCmp.defaultProps = {
+  icon: null,
+  title: null,
 }
 
 export default SectionCmp

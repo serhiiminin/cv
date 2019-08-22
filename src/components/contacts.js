@@ -1,15 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import { FaTwitter, FaGithub, FaLinkedin, FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa"
+import { FaTwitter, FaGithub, FaLinkedin, FaMapMarkerAlt, FaEnvelope, FaMobileAlt } from "react-icons/fa"
 import IconPrint from "./icon-print"
 import Image from "./image"
 import ContactLines from "./contact-lines"
 import Title from "./title"
-
-const Section = styled.section`
-  margin-bottom: 1.2rem;
-`
+import Section from "./section"
 
 const TitleBlock = styled.div`
   display: flex;
@@ -52,8 +49,8 @@ const Contacts = ({ contacts }) => {
         <ContactLines
           definitions={[
             { title: <FaMapMarkerAlt/>, definition: location },
-            { title: <FaPhone/>, definition: <a href={`tel:${phone}?call`}>{phone}</a> },
-            { title: <FaEnvelope/>, definition: <a href={`mailto:${email}`}>{email}</a> },
+            { title: <FaMobileAlt/>, definition: <a href={`tel:${phone}?call`}>{phone}</a> },
+            { title: <FaEnvelope />, definition: <a href={`mailto:${email}`}>{email}</a> },
             {
               title: <FaLinkedin/>,
               definition: <a href={linkedin} target='_blank' rel='noopener noreferrer'>{nickname}</a>,

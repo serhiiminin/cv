@@ -13,7 +13,7 @@ const DefinitionList = styled.dl`
 
 const DefinitionTitle = styled.dt`
   display: grid;  
-  justify-self: center;
+  justify-self: start;
   align-self: center;
   font-size: 2rem;
 `

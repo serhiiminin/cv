@@ -15,8 +15,8 @@ const GlobalStyle = createGlobalStyle`
   
   * {
     box-sizing: border-box;
-    letter-spacing: .05rem;
-    line-height: 2.6rem;
+    letter-spacing: .04rem;
+    line-height: 2.4rem;
   }
   
   a { 
