@@ -6,6 +6,7 @@ import IconPrint from "./icon-print"
 import Image from "./image"
 import ContactLines from "./contact-lines"
 import Title from "./title"
+import Anchor from "./anchor"
 import Section from "./section"
 
 const TitleBlock = styled.div`
@@ -49,17 +50,17 @@ const Contacts = ({ contacts }) => {
         <ContactLines
           definitions={[
             { title: <FaMapMarkerAlt/>, definition: location },
-            { title: <FaMobileAlt/>, definition: <a href={`tel:${phone}?call`}>{phone}</a> },
-            { title: <FaEnvelope />, definition: <a href={`mailto:${email}`}>{email}</a> },
+            { title: <FaMobileAlt/>, definition: <Anchor href={`tel:${phone}?call`}>{phone}</Anchor> },
+            { title: <FaEnvelope />, definition: <Anchor href={`mailto:${email}`}>{email}</Anchor> },
             {
               title: <FaLinkedin/>,
-              definition: <a href={linkedin} target='_blank' rel='noopener noreferrer'>{nickname}</a>,
+              definition: <Anchor href={linkedin} target='_blank' rel='noopener noreferrer'>{nickname}</Anchor>,
             }, {
               title: <FaGithub/>,
-              definition: <a href={github} target='_blank' rel='noopener noreferrer'>{nickname}</a>,
+              definition: <Anchor href={github} target='_blank' rel='noopener noreferrer'>{nickname}</Anchor>,
             }, {
               title: <FaTwitter/>,
-              definition: <a href={twitter} target='_blank' rel='noopener noreferrer'>{nickname}</a>,
+              definition: <Anchor href={twitter} target='_blank' rel='noopener noreferrer'>{nickname}</Anchor>,
             },
           ]}
         />
