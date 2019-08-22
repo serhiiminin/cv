@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { FaTwitter, FaGithub, FaLinkedin, FaMapMarkerAlt, FaEnvelope, FaMobileAlt } from "react-icons/fa"
 import IconPrint from "./icon-print"
 import Image from "./image"
-import ContactLines from "./contact-lines"
+import DataLines from "./data-lines"
 import Title from "./title"
 import Anchor from "./anchor"
 import Section from "./section"
@@ -47,20 +47,20 @@ const Contacts = ({ contacts }) => {
         <ImageWrapper>
           <Image/>
         </ImageWrapper>
-        <ContactLines
+        <DataLines
           definitions={[
             { title: <FaMapMarkerAlt/>, value: location },
             { title: <FaMobileAlt/>, value: <Anchor href={`tel:${phone}?call`}>{phone}</Anchor> },
             { title: <FaEnvelope />, value: <Anchor href={`mailto:${email}`}>{email}</Anchor> },
             {
               title: <FaLinkedin/>,
-              value: <Anchor href={linkedin} target='_blank' rel='noopener noreferrer'>{nickname}</Anchor>,
+              value: <Anchor href={linkedin} target='_blank'>{nickname}</Anchor>,
             }, {
               title: <FaGithub/>,
-              value: <Anchor href={github} target='_blank' rel='noopener noreferrer'>{nickname}</Anchor>,
+              value: <Anchor href={github} target='_blank'>{nickname}</Anchor>,
             }, {
               title: <FaTwitter/>,
-              value: <Anchor href={twitter} target='_blank' rel='noopener noreferrer'>{nickname}</Anchor>,
+              value: <Anchor href={twitter} target='_blank'>{nickname}</Anchor>,
             },
           ]}
         />

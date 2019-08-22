@@ -2,14 +2,11 @@ import React from "react"
 import PropTypes from 'prop-types';
 import { FaTerminal } from "react-icons/fa"
 import Section from "./section"
-import ContactLines from "./contact-lines"
+import DataLines from "./data-lines"
 
 const Skills = ({ skills }) => (
-  <Section
-    title="Skills"
-    icon={<FaTerminal/>}
-  >
-    <ContactLines definitions={skills}/>
+  <Section title="Skills" icon={<FaTerminal/>}>
+    <DataLines definitions={skills}/>
   </Section>
 )
 

@@ -26,7 +26,7 @@ const DefinitionData = styled.dd`
   align-self: center;
 `
 
-const ContactLines = ({ definitions }) => (
+const DataLines = ({ definitions }) => (
   <DefinitionList>
     {definitions.map(({ title, value }) => (
       <Fragment key={shortid.generate()}>
@@ -37,7 +37,7 @@ const ContactLines = ({ definitions }) => (
   </DefinitionList>
 )
 
-ContactLines.propTypes = {
+DataLines.propTypes = {
   definitions: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
@@ -46,4 +46,4 @@ ContactLines.propTypes = {
   ).isRequired,
 }
 
-export default ContactLines
+export default DataLines

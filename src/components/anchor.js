@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Anchor = styled.a`
-  color: blue;
+  color: #1E779F;
 `;
 
 export default Anchor;

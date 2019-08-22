@@ -10,10 +10,7 @@ const SummaryText = styled.p`
 `;
 
 const Summary = ({ summary }) => (
-  <Section
-    title="Summary"
-    icon={<FaRegAddressCard/>}
-  >
+  <Section title="Summary" icon={<FaRegAddressCard/>}>
     <SummaryText>{summary}</SummaryText>
   </Section>
 )
