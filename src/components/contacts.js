@@ -24,13 +24,13 @@ const TitlesWrapper = styled.div`
 
 const TitleName = styled.h1`
   font-size: 3.6rem;
-  font-weight: 900;
+  font-weight: bold;
   margin: 0;
 `;
 
 const TitlePosition = styled.h2`
   font-size: 2.8rem;
-  font-weight: 900;
+  font-weight: bold;
   margin: 0;
 `;
 
@@ -44,7 +44,7 @@ const ContactsInner = styled.div`
 const ImageWrapper = styled.div`
   height: 18rem;
   width: 18rem;
-  border-radius: 1rem;
+  border-radius: 1.2rem;
   overflow: hidden;
 `
 

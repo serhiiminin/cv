@@ -60,14 +60,14 @@
       "organizationRef": "http://infopulse-univer.com.ua/",
       "period": "Jul 2015 - Oct 2015",
       "position": "Student",
-      "description": "During this course, I have learned the basics of QA. The course included basic information about Scrum methodology, HTML, CSS, bash commands, and many others."
+      "description": "During this course, I have learned the basics of QA. The course included basic information about Scrum methodology, HTML, CSS, bash commands, and many others"
     },
     {
       "organization": "SNU",
       "organizationRef": "https://snu.edu.ua/",
       "period": "2010 - 2014",
       "position": "Bachelor",
-      "description": "Having awesome teaching stuff I got deeper into the mathematical analysis, physics of liquid and aerodynamics. I had experience working in a laboratory with real aerodynamic equipment."
+      "description": "Having awesome teaching stuff I got deeper into the mathematical analysis, physics of liquid and aerodynamics. I had experience working in a laboratory with real aerodynamic equipment"
     }
   ],
   "languages": [

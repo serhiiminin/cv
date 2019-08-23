@@ -24,7 +24,9 @@
     "shortid": "^2.2.14",
     "styled-components": "4.3.2",
     "styled-normalize": "8.0.6",
-    "typeface-merriweather": "0.0.72"
+    "typeface-ibm-plex-sans-condensed": "^0.0.61",
+    "typeface-merriweather": "0.0.72",
+    "typeface-montserrat": "^0.0.75"
   },
   "devDependencies": {
     "gh-pages": "2.1.1",

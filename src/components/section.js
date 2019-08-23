@@ -11,7 +11,7 @@ const Title = styled.h2`
   align-items: center;
   font-size: 3rem;
   margin: 0 0 2.4rem;
-  font-weight: 900;
+  font-weight: bold;
 `
 
 const TitleText = styled.span`

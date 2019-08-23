@@ -8,3 +8,5 @@
 
 // google fonts
 require('typeface-merriweather');
+require('typeface-ibm-plex-sans-condensed');
+require('typeface-montserrat');

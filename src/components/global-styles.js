@@ -9,13 +9,13 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     background: #fff;
     color: #333;
-    font-family: "merriweather", sans-serif;
-    font-size: 1.6rem;
+    font-family: "ibm plex sans condensed", sans-serif;
+    font-size: 1.8rem;
   } 
   
   * {
     box-sizing: border-box;
-    letter-spacing: .04rem;
+    letter-spacing: .08rem;
     line-height: 2.4rem;
   }
   
