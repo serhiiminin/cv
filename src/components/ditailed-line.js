@@ -7,7 +7,7 @@ const LineWrapper = styled.div`
   display: grid;
   grid-template-columns: 20rem auto;
   column-gap: 1.2rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 3rem;
 `
 
 const Titles = styled.div`
@@ -15,7 +15,7 @@ const Titles = styled.div`
   align-self: center;
   justify-self: center;
   text-align: center;
-  row-gap: .4rem;
+  row-gap: .6rem;
 `
 
 const DescriptionText = styled.p`
@@ -25,10 +25,12 @@ const DescriptionText = styled.p`
 
 const Organization = styled.span`
   font-weight: bold;
+  font-size: 2rem;
 `;
 
 const Position = styled.span`
   font-weight: bold;
+  font-size: 1.8rem;
 `;
 
 const Period = styled.span`

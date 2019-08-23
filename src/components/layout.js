@@ -6,7 +6,7 @@ import { Normalize } from "styled-normalize"
 import styled from 'styled-components';
 
 const Main = styled.main`
-  margin-top: 1.2rem;
+  margin-top: 2.4rem;
 `;
 
 const Layout = ({ children }) => (

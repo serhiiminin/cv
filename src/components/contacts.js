@@ -5,7 +5,6 @@ import { FaTwitter, FaGithub, FaLinkedin, FaMapMarkerAlt, FaEnvelope, FaMobileAl
 import IconPrint from "./icon-print"
 import Image from "./image"
 import DataLines from "./data-lines"
-import Title from "./title"
 import Anchor from "./anchor"
 import Section from "./section"
 
@@ -17,11 +16,29 @@ const TitleBlock = styled.div`
   margin-bottom: 1rem;
 `
 
+const TitlesWrapper = styled.div`
+  display: grid;
+  row-gap: 1.2rem;
+  margin-bottom: 1.8rem;
+`;
+
+const TitleName = styled.h1`
+  font-size: 3.6rem;
+  font-weight: 900;
+  margin: 0;
+`;
+
+const TitlePosition = styled.h2`
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin: 0;
+`;
+
 const ContactsInner = styled.div`
   display: grid;
   grid-template-columns: repeat(2, max-content);
   justify-content: start;
-  column-gap: 1.2rem;
+  column-gap: 3.6rem;
 `
 
 const ImageWrapper = styled.div`
@@ -40,7 +57,10 @@ const Contacts = ({ contacts }) => {
   return (
     <Section>
       <TitleBlock>
-        <Title>{`${name} | ${position}`}</Title>
+        <TitlesWrapper>
+          <TitleName>{name}</TitleName>
+          <TitlePosition>{position}</TitlePosition>
+        </TitlesWrapper>
         <IconPrint onClick={onPrint}/>
       </TitleBlock>
       <ContactsInner>

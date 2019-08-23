@@ -8,4 +8,3 @@
 
 // google fonts
 require('typeface-merriweather');
-require('typeface-source-sans-pro');

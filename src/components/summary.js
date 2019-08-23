@@ -1,16 +1,15 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { FaRegAddressCard } from "react-icons/fa"
+import { FaEdit } from "react-icons/fa"
 import Section from "./section"
 import styled from 'styled-components';
 
 const SummaryText = styled.p`
   text-align: justify;
-  font-size: 1.8rem;
 `;
 
 const Summary = ({ summary }) => (
-  <Section title="Summary" icon={<FaRegAddressCard/>}>
+  <Section title="Summary" icon={<FaEdit/>}>
     <SummaryText>{summary}</SummaryText>
   </Section>
 )

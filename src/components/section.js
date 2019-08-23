@@ -3,13 +3,15 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 
 const Section = styled.section`
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.6rem;
 `
 
 const Title = styled.h2`
   display: flex;
   align-items: center;
-  margin: 0 0 1.2rem;
+  font-size: 3rem;
+  margin: 0 0 2.4rem;
+  font-weight: 900;
 `
 
 const TitleText = styled.span`
