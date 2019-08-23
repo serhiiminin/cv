@@ -6,9 +6,10 @@ import styled from "styled-components"
 const DefinitionList = styled.dl`
   display: grid;
   grid-template-columns: max-content auto;
-  grid-auto-rows: 3rem;
+  grid-auto-rows: max-content;
   align-items: center;
   column-gap: 1.2rem;
+  row-gap: .8rem;
   margin: 0;
 `
 

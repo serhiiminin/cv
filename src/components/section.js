@@ -4,12 +4,16 @@ import styled from "styled-components"
 
 const Section = styled.section`
   margin-bottom: 3.6rem;
+  
+  @media print {
+    margin-bottom: 1.8rem;
+  }
 `
 
 const Title = styled.h2`
   display: flex;
   align-items: center;
-  font-size: 3rem;
+  font-size: 3.2rem;
   margin: 0 0 2.4rem;
   font-weight: bold;
 `

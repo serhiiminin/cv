@@ -42,8 +42,8 @@ const ContactsInner = styled.div`
 `
 
 const ImageWrapper = styled.div`
-  height: 18rem;
-  width: 18rem;
+  height: 18.5rem;
+  width: 18.5rem;
   border-radius: 1.2rem;
   overflow: hidden;
 `
