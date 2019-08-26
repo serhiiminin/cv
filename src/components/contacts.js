@@ -3,37 +3,10 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 import { FaTwitter, FaGithub, FaLinkedin, FaMapMarkerAlt, FaEnvelope, FaMobileAlt } from "react-icons/fa"
 import { withTheme } from "../context/theme"
-import IconPrint from "./icon-print"
 import Image from "./image"
 import DataLines from "./data-lines"
 import Anchor from "./anchor"
 import Section from "./section"
-
-const TitleBlock = styled.div`
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-`
-
-const TitlesWrapper = styled.div`
-  display: grid;
-  row-gap: 1.2rem;
-  margin-bottom: 1.8rem;
-`;
-
-const TitleName = styled.h1`
-  font-size: 3.6rem;
-  font-weight: bold;
-  margin: 0;
-`;
-
-const TitlePosition = styled.h2`
-  font-size: 2.8rem;
-  font-weight: bold;
-  margin: 0;
-`;
 
 const ContactsInner = styled.div`
   display: grid;
@@ -50,20 +23,10 @@ const ImageWrapper = styled.div`
 `
 
 const Contacts = ({ contacts, theme }) => {
-  const { name, position, location, phone, email, linkedin, github, twitter, nickname } = contacts
-  const onPrint = () => {
-    window.print()
-  }
+  const { location, phone, email, linkedin, github, twitter, nickname } = contacts
 
   return (
     <Section>
-      <TitleBlock>
-        <TitlesWrapper>
-          <TitleName>{name}</TitleName>
-          <TitlePosition>{position}</TitlePosition>
-        </TitlesWrapper>
-        <IconPrint onClick={onPrint}/>
-      </TitleBlock>
       <ContactsInner>
         <ImageWrapper theme={theme}>
           <Image/>
@@ -72,7 +35,7 @@ const Contacts = ({ contacts, theme }) => {
           definitions={[
             { title: <FaMapMarkerAlt/>, value: location },
             { title: <FaMobileAlt/>, value: <Anchor href={`tel:${phone}?call`}>{phone}</Anchor> },
-            { title: <FaEnvelope />, value: <Anchor href={`mailto:${email}`}>{email}</Anchor> },
+            { title: <FaEnvelope/>, value: <Anchor href={`mailto:${email}`}>{email}</Anchor> },
             {
               title: <FaLinkedin/>,
               value: <Anchor href={linkedin} target='_blank'>{nickname}</Anchor>,
@@ -92,8 +55,6 @@ const Contacts = ({ contacts, theme }) => {
 
 Contacts.propTypes = {
   contacts: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    position: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,
     nickname: PropTypes.string.isRequired,
     phone: PropTypes.string.isRequired,
@@ -105,4 +66,4 @@ Contacts.propTypes = {
   }),
 }
 
-export default withTheme(Contacts);
+export default withTheme(Contacts)
