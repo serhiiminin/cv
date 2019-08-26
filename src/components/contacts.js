@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import { FaTwitter, FaGithub, FaLinkedin, FaMapMarkerAlt, FaEnvelope, FaMobileAlt } from "react-icons/fa"
+import { withTheme } from "../context/theme"
 import IconPrint from "./icon-print"
 import Image from "./image"
 import DataLines from "./data-lines"
@@ -48,7 +49,7 @@ const ImageWrapper = styled.div`
   overflow: hidden;
 `
 
-const Contacts = ({ contacts }) => {
+const Contacts = ({ contacts, theme }) => {
   const { name, position, location, phone, email, linkedin, github, twitter, nickname } = contacts
   const onPrint = () => {
     window.print()
@@ -64,7 +65,7 @@ const Contacts = ({ contacts }) => {
         <IconPrint onClick={onPrint}/>
       </TitleBlock>
       <ContactsInner>
-        <ImageWrapper>
+        <ImageWrapper theme={theme}>
           <Image/>
         </ImageWrapper>
         <DataLines
@@ -104,4 +105,4 @@ Contacts.propTypes = {
   }),
 }
 
-export default Contacts
+export default withTheme(Contacts);

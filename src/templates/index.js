@@ -9,20 +9,23 @@ import {
   Summary,
   Contacts,
 } from "../components"
+import { ThemeProvider } from "../context/theme"
 
 const IndexPage = ({ pageContext }) => {
   const { contacts, summary, skills, experience, education, languages } = pageContext.index
 
   return (
-    <Layout>
-      <Seo title="CV"/>
-      <Contacts contacts={contacts}/>
-      <Summary summary={summary}/>
-      <Skills skills={skills}/>
-      <Experience experience={experience}/>
-      <Education education={education}/>
-      <Languages languages={languages}/>
-    </Layout>
+    <ThemeProvider>
+      <Layout>
+        <Seo title="CV"/>
+        <Contacts contacts={contacts}/>
+        <Summary summary={summary}/>
+        <Skills skills={skills}/>
+        <Experience experience={experience}/>
+        <Education education={education}/>
+        <Languages languages={languages}/>
+      </Layout>
+    </ThemeProvider>
   )
 }
 

@@ -11159,20 +11159,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-ibm-plex-sans-condensed@^0.0.61:
+typeface-ibm-plex-sans-condensed@0.0.61:
   version "0.0.61"
   resolved "https://npm.globit.com/typeface-ibm-plex-sans-condensed/-/typeface-ibm-plex-sans-condensed-0.0.61.tgz#9e7ec76c14fa6ad96aeec414e1bfcb8ec56bf69e"
   integrity sha512-lv6wDY/Upf9G1XpXy0HbwQDQZc4sjEzbLAN9QbEShFSCCxsISuEOPsxK09TBpHnVIzJIx523I1/ZAqOjr2NKxQ==
-
-typeface-merriweather@0.0.72:
-  version "0.0.72"
-  resolved "https://npm.globit.com/typeface-merriweather/-/typeface-merriweather-0.0.72.tgz#2b990f5293252052d51d170c82d3892319ff0555"
-  integrity sha512-gO0+fcZ1fTyKUsYY1ltYOOTI6FmBGeEdyIfeQg9NL8aInndk0feiJJVJsKHm/DiyYrnQEezraAQhz/KQoqMGtw==
-
-typeface-montserrat@^0.0.75:
-  version "0.0.75"
-  resolved "https://npm.globit.com/typeface-montserrat/-/typeface-montserrat-0.0.75.tgz#b796d9c767ab8ed1343271985beb1e44b382b7b3"
-  integrity sha512-8ski20t3hdwu2T85pVfjK4jsDbwW8yWzd+LAKxYEmu+JVLVlB7G2yfmdKZz06pUwYCLVFvHvup+NYYulHDpE+w==
 
 ua-parser-js@^0.7.18:
   version "0.7.20"

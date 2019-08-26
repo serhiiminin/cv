@@ -13,7 +13,7 @@ const Skills = ({ skills }) => (
 Skills.propTypes = {
   skills: PropTypes.arrayOf(PropTypes.shape({
     text: PropTypes.string,
-    value: PropTypes.string,
+    value: PropTypes.arrayOf(PropTypes.string),
   })).isRequired
 }
 
