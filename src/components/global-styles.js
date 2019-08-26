@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
     background: #fff;
     color: #333;
     font-family: "ibm plex sans condensed", sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   } 
   
   * {

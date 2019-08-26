@@ -4,18 +4,18 @@ import styled from "styled-components"
 import Anchor from "./anchor"
 
 const LineWrapper = styled.div`
+  margin-bottom: 2.4rem;
   display: grid;
-  grid-template-columns: 20rem auto;
-  column-gap: 1.2rem;
-  margin-bottom: 3.2rem;
+  row-gap: .4rem;
 `
 
-const Titles = styled.div`
-  display: grid;
-  align-self: center;
-  justify-self: center;
-  text-align: center;
-  row-gap: .4rem;
+const Organization = styled.div`
+  font-weight: bold;
+  font-size: 1.8rem;
+`
+
+const Period = styled.span`
+  opacity: .5;
 `
 
 const DescriptionText = styled.p`
@@ -23,31 +23,14 @@ const DescriptionText = styled.p`
   margin: 0;
 `
 
-const Organization = styled.span`
-  font-weight: bold;
-  font-size: 2rem;
-`;
-
-const Position = styled.span`
-  font-weight: bold;
-  font-size: 2rem;
-`;
-
-const Period = styled.span`
-  font-weight: bold;
-  font-size: 1.6rem;
-  font-style: italic;
-`;
-
 const DetailedLine = ({ organization, organizationRef, period, position, description }) => (
   <LineWrapper>
-    <Titles>
-      <Organization>
-        <Anchor href={organizationRef} target='_blank'>{organization}</Anchor>
-      </Organization>
-      <Position>{position}</Position>
-      <Period>{period}</Period>
-    </Titles>
+    <Period>{period}</Period>
+    <Organization>
+      <Anchor href={organizationRef} target='_blank'>{organization}</Anchor>
+      {' — '}
+      <span>{position}</span>
+    </Organization>
     <DescriptionText>
       {description}
     </DescriptionText>
