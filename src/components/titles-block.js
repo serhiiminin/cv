@@ -8,25 +8,25 @@ const TitleBlock = styled.div`
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0 0 .8rem;
+  margin: 0 0 ${({ theme }) => theme.spacing[1]};
 `
 
 const TitlesWrapper = styled.div`
   display: grid;
-  row-gap: .8rem;
-  margin-bottom: .8rem;
+  row-gap: ${({ theme }) => theme.spacing[1]};
+  margin-bottom: ${({ theme }) => theme.spacing[1]};
 `
 
 const TitleName = styled.h1`
-  font-size: 3.6rem;
+  font-size: ${({ theme }) => theme.fontSize[9]};
   font-weight: bold;
   margin: 0;
 `
 
 const TitlePosition = styled.h2`
-  font-size: 2rem;
+  font-size: ${({ theme }) => theme.fontSize[4]};
   font-weight: bold;
-  opacity: .5;
+  opacity: ${({ theme }) => theme.opacity.text};
   margin: 0;
 `
 

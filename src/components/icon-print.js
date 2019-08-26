@@ -1,8 +1,8 @@
 import styled from "styled-components"
 import { FaPrint } from "react-icons/fa"
 
-const PrintIcon = styled(FaPrint)`
-  font-size: 2.4rem;
+const IconPrint = styled(FaPrint)`
+  font-size: ${({ theme }) => theme.fontSize[5]};
   &:hover {
     cursor: pointer;
   }
@@ -11,4 +11,4 @@ const PrintIcon = styled(FaPrint)`
   }
 `
 
-export default PrintIcon
+export default IconPrint

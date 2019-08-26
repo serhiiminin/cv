@@ -8,8 +8,8 @@ const DefinitionList = styled.dl`
   grid-template-columns: max-content auto;
   grid-auto-rows: max-content;
   align-items: center;
-  column-gap: 1.2rem;
-  row-gap: .8rem;
+  column-gap: ${({ theme }) => theme.spacing[2]};
+  row-gap: ${({ theme }) => theme.spacing[1]};
   margin: 0;
 `
 

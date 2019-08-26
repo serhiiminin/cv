@@ -5,10 +5,10 @@ import styled from "styled-components"
 const Section = styled.section`
   display: grid;
   grid-template-columns: 20rem auto;
-  margin-bottom: 3.6rem;
+  margin-bottom: ${({ theme }) => theme.spacing[8]};
   
   @media print {
-    margin-bottom: 1.8rem;
+    margin-bottom: ${({ theme }) => theme.spacing[4]};
   }
 `
 
@@ -19,13 +19,13 @@ const DetailsWrapper = styled.div``
 const Title = styled.h2`
   display: flex;
   align-items: center;
-  font-size: 2.4rem;
-  margin: 0 0 2.4rem;
+  font-size: ${({ theme }) => theme.fontSize[5]};
+  margin: 0 0 ${({ theme }) => theme.spacing[5]};
   font-weight: bold;
 `
 
 const TitleText = styled.span`
-  margin-left: ${props => props.icon ? `1.2rem` : 0};
+  margin-left: ${({ theme, icon }) => icon ? theme.spacing[2] : 0};
 `
 
 const SectionCmp = ({ title, icon, children, titleRender }) => {

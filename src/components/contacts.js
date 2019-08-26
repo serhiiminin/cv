@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import { FaTwitter, FaGithub, FaLinkedin, FaMapMarkerAlt, FaEnvelope, FaMobileAlt } from "react-icons/fa"
-import { withTheme } from "../context/theme"
 import Image from "./image"
 import ContactLines from "./contact-lines"
 import Anchor from "./anchor"
@@ -13,7 +12,7 @@ const ContactsInner = styled.div`
   display: grid;
   grid-template-columns: repeat(2, max-content);
   justify-content: start;
-  column-gap: 3.6rem;
+  column-gap: ${({ theme }) => theme.spacing[8]};
 `
 
 const ImageWrapper = styled.div`
@@ -75,4 +74,4 @@ Contacts.propTypes = {
   }),
 }
 
-export default withTheme(Contacts)
+export default Contacts

@@ -8,8 +8,8 @@ const DefinitionList = styled.ul`
   list-style: none;
   grid-template-columns: repeat(4, max-content);
   grid-auto-rows: max-content;
-  column-gap: 4rem;
-  row-gap: 1.6rem;
+  column-gap: ${({ theme }) => theme.spacing[9]};
+  row-gap: ${({ theme }) => theme.spacing[3]};
   margin: 0;
   padding: 0;
   
@@ -23,11 +23,11 @@ const DefinitionItem = styled.li`
 
 const DefinitionTitle = styled.h3`
   font-weight: bolder;
-  margin: 0 0 1.2rem;
+  margin: 0 0 ${({ theme }) => theme.spacing[2]};
 `
 
 const DefinitionDataList = styled.ul`
-  padding: 0 0 0 1.6rem;
+  padding: 0 0 0 ${({ theme }) => theme.spacing[3]};
   list-style: initial;
 `
 

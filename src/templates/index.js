@@ -1,21 +1,13 @@
 import React from "react"
-import {
-  Layout,
-  Seo,
-  Education,
-  Skills,
-  Experience,
-  Languages,
-  Summary,
-  Contacts,
-} from "../components"
-import { ThemeProvider } from "../context/theme"
+import { ThemeProvider } from "styled-components"
+import { Layout, Seo, Education, Skills, Experience, Languages, Summary, Contacts } from "../components"
+import theme from "../theme"
 
 const IndexPage = ({ pageContext }) => {
   const { contacts, summary, skills, experience, education, languages } = pageContext.index
 
   return (
-    <ThemeProvider>
+    <ThemeProvider theme={theme}>
       <Layout>
         <Seo title="CV"/>
         <Contacts contacts={contacts}/>

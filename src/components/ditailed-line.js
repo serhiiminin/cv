@@ -4,18 +4,18 @@ import styled from "styled-components"
 import Anchor from "./anchor"
 
 const LineWrapper = styled.div`
-  margin-bottom: 2.4rem;
+  margin-bottom: ${({ theme }) => theme.spacing[5]};
   display: grid;
-  row-gap: .4rem;
+  row-gap: ${({ theme }) => theme.spacing[0]};
 `
 
 const Organization = styled.div`
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: ${({ theme }) => theme.fontSize[3]};
 `
 
 const Period = styled.span`
-  opacity: .5;
+  opacity: ${({ theme }) => theme.opacity.text};
 `
 
 const DescriptionText = styled.p`

@@ -3,7 +3,7 @@ import styled from "styled-components"
 export default styled.div`
    width: 100%;
    margin: 0 auto;
-   padding: 0 1.6rem 2.4rem;
+   padding: ${({ theme }) => `0 ${theme.spacing[3]} ${theme.spacing[5]}`};
    
    @media (min-width: 576px) {
     max-width: 54rem;

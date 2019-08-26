@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 const Anchor = styled.a`
-  color: #1E779F;
-`;
+  color: ${({ theme }) => theme.color.anchor};
+`
 
-export default Anchor;
+export default Anchor
