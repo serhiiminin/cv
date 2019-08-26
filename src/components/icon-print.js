@@ -1,8 +1,7 @@
-import React from "react"
 import styled from "styled-components"
-import { MdPrint } from "react-icons/md"
+import { FaPrint } from "react-icons/fa"
 
-const PrintIcon = styled(props => <MdPrint {...props} />)`
+const PrintIcon = styled(FaPrint)`
   font-size: 2.4rem;
   &:hover {
     cursor: pointer;

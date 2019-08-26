@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { FaTwitter, FaGithub, FaLinkedin, FaMapMarkerAlt, FaEnvelope, FaMobileAlt } from "react-icons/fa"
 import { withTheme } from "../context/theme"
 import Image from "./image"
-import DataLines from "./data-lines"
+import ContactLines from "./contact-lines"
 import Anchor from "./anchor"
 import Section from "./section"
 import TitlesBlock from "./titles-block"
@@ -32,17 +32,17 @@ const Contacts = ({ contacts, theme }) => {
         <Image/>
       </ImageWrapper>
     )}>
-      <div>
+      <>
         <TitlesBlock position={position} name={name}/>
         <ContactsInner>
-          <DataLines
+          <ContactLines
             definitions={[
               { title: <FaMapMarkerAlt/>, value: location },
               { title: <FaMobileAlt/>, value: <Anchor href={`tel:${phone}?call`}>{phone}</Anchor> },
               { title: <FaEnvelope/>, value: <Anchor href={`mailto:${email}`}>{email}</Anchor> },
             ]}
           />
-          <DataLines
+          <ContactLines
             definitions={[
               {
                 title: <FaLinkedin/>,
@@ -57,7 +57,7 @@ const Contacts = ({ contacts, theme }) => {
             ]}
           />
         </ContactsInner>
-      </div>
+      </>
     </Section>
   )
 }

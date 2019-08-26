@@ -2,11 +2,11 @@ import React from "react"
 import PropTypes from 'prop-types';
 import { FaCode } from "react-icons/fa"
 import Section from "./section"
-import DataLines from "./data-lines"
+import SkillLines from "./skill-lines"
 
 const Skills = ({ skills }) => (
   <Section title="Skills" icon={<FaCode/>}>
-    <DataLines definitions={skills}/>
+    <SkillLines definitions={skills}/>
   </Section>
 )
 

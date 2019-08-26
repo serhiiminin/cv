@@ -15,27 +15,27 @@
   "skills": [
     {
       "title": "Languages",
-      "value": ["JavaScript ES6+", "HTML5", "CSS3"]
+      "value": ["JavaScript ES6+", "TypeScript", "HTML5", "CSS3"]
     },
     {
       "title": "Libraries",
       "value": ["React", "Redux (thunk)"]
     },
     {
-      "title": "Methodologies",
-      "value": ["CSS-in-JS", "BEM"]
+      "title": "Styling",
+      "value": ["CSS-in-JS", "SCSS/LESS", "BEM"]
     },
     {
       "title": "Testing",
-      "value": ["Jest", "Enzyme"]
+      "value": ["Unit", "TDD"]
     },
     {
       "title": "Others",
-      "value": ["git", "npm", "yarn", "webpack", "RESTful APIs", "SCSS/LESS"]
+      "value": ["git", "npm/yarn", "webpack", "RESTful APIs", "Gatsby", "Next.js"]
     },
     {
       "title": "Familiar with",
-      "value": ["NodeJS", "MongoDB", "Express.js", "jQuery", "Lodash"]
+      "value": ["Node.js", "Express.js", "MongoDB", "jQuery", "Lodash", "Gulp"]
     }
   ],
   "experience": [

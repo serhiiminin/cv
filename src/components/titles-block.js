@@ -26,7 +26,7 @@ const TitleName = styled.h1`
 const TitlePosition = styled.h2`
   font-size: 2rem;
   font-weight: bold;
-  color: gray;
+  opacity: .5;
   margin: 0;
 `
 
@@ -41,7 +41,7 @@ const TitlesBlock = ({ name, position }) => {
         <TitleName>{name}</TitleName>
         <TitlePosition>{position}</TitlePosition>
       </TitlesWrapper>
-      <IconPrint onClick={onPrint}/>
+      <IconPrint onClick={onPrint} title='Print CV'/>
     </TitleBlock>
   )
 }

@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const Section = styled.section`
   display: grid;
-  grid-template-columns: 22rem auto;
+  grid-template-columns: 20rem auto;
   margin-bottom: 3.6rem;
   
   @media print {
@@ -19,7 +19,7 @@ const DetailsWrapper = styled.div``
 const Title = styled.h2`
   display: flex;
   align-items: center;
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   margin: 0 0 2.4rem;
   font-weight: bold;
 `
