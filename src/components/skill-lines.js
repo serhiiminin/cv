@@ -34,9 +34,9 @@ const DefinitionDataList = styled.ul`
 const DefinitionDataItem = styled.li`
 `
 
-const SkillLines = ({ definitions }) => (
+const SkillLines = ({ data }) => (
   <DefinitionList>
-    {definitions.map(({ title, value }) => (
+    {data.map(({ title, value }) => (
       <DefinitionItem key={shortid.generate()}>
         <DefinitionTitle>{title}</DefinitionTitle>
         <DefinitionDataList>{value.map(name => (
@@ -48,7 +48,7 @@ const SkillLines = ({ definitions }) => (
 )
 
 SkillLines.propTypes = {
-  definitions: PropTypes.arrayOf(
+  data: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
       value: PropTypes.arrayOf(PropTypes.string).isRequired,

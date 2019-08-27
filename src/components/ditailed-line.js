@@ -15,7 +15,7 @@ const Organization = styled.div`
 `
 
 const Period = styled.span`
-  opacity: ${({ theme }) => theme.opacity.text};
+  color: ${({ theme }) => theme.color.textLighter};
 `
 
 const DescriptionText = styled.p`

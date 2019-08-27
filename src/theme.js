@@ -2,6 +2,7 @@ const theme = {
   color: {
     background: "#fff",
     text: "#333",
+    textLighter: "#858690",
     anchor: "#1E779F",
   },
   fontFamily: {
@@ -49,11 +50,11 @@ const theme = {
     "2.4rem",
     "2.6rem",
     "2.8rem",
-    "3rem"
+    "3rem",
   ],
   opacity: {
-    text: 0.5
-  }
+    text: 0.5,
+  },
 }
 
-export default theme;
+export default theme

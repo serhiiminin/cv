@@ -6,7 +6,7 @@ import SkillLines from "./skill-lines"
 
 const Skills = ({ skills }) => (
   <Section title="Skills" icon={<FaCode/>}>
-    <SkillLines definitions={skills}/>
+    <SkillLines data={skills}/>
   </Section>
 )
 

@@ -35,14 +35,14 @@ const Contacts = ({ contacts, theme }) => {
         <TitlesBlock position={position} name={name}/>
         <ContactsInner>
           <ContactLines
-            definitions={[
+            data={[
               { title: <FaMapMarkerAlt/>, value: location },
               { title: <FaMobileAlt/>, value: <Anchor href={`tel:${phone}?call`}>{phone}</Anchor> },
               { title: <FaEnvelope/>, value: <Anchor href={`mailto:${email}`}>{email}</Anchor> },
             ]}
           />
           <ContactLines
-            definitions={[
+            data={[
               {
                 title: <FaLinkedin/>,
                 value: <Anchor href={linkedin} target='_blank'>{nickname}</Anchor>,

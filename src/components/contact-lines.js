@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import shortid from "shortid"
 import styled from "styled-components"
 
-const DefinitionList = styled.dl`
+const ContactsList = styled.dl`
   display: grid;
   grid-template-columns: max-content auto;
   grid-auto-rows: max-content;
@@ -13,33 +13,33 @@ const DefinitionList = styled.dl`
   margin: 0;
 `
 
-const DefinitionTitle = styled.dt`
+const Title = styled.dt`
   display: grid;  
   justify-self: start;
   align-self: center;
   font-weight: bolder;
 `
 
-const DefinitionData = styled.dd`
+const Data = styled.dd`
   margin-inline-start: 0;
   display: grid;
   justify-self: start;
   align-self: center;
 `
 
-const ContactLines = ({ definitions }) => (
-  <DefinitionList>
-    {definitions.map(({ title, value }) => (
+const ContactLines = ({ data }) => (
+  <ContactsList>
+    {data.map(({ title, value }) => (
       <Fragment key={shortid.generate()}>
-        <DefinitionTitle>{title}</DefinitionTitle>
-        <DefinitionData>{value}</DefinitionData>
+        <Title>{title}</Title>
+        <Data>{value}</Data>
       </Fragment>
     ))}
-  </DefinitionList>
+  </ContactsList>
 )
 
 ContactLines.propTypes = {
-  definitions: PropTypes.arrayOf(
+  data: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
       value: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
