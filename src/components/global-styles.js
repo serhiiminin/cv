@@ -17,6 +17,11 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     letter-spacing: ${({ theme }) => theme.letterSpacing[3]};
     line-height: ${({ theme }) => theme.lineHeight[1]};
+    
+    @media print and (color) {
+      -webkit-print-color-adjust: exact;
+      color-adjust: exact;
+    }
   }
   
   a { 
