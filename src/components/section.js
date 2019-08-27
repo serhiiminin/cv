@@ -4,8 +4,12 @@ import styled from "styled-components"
 
 const Section = styled.section`
   display: grid;
-  grid-template-columns: 20rem auto;
+  grid-template-columns: 100%;
   margin-bottom: ${({ theme }) => theme.spacing[8]};
+  
+  @media (min-width: 768px) {
+     grid-template-columns: 20rem auto;
+  }
   
   @media print {
     margin-bottom: ${({ theme }) => theme.spacing[4]};

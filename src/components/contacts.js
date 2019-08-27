@@ -10,9 +10,14 @@ import TitlesBlock from "./titles-block"
 
 const ContactsInner = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: max-content;
+  row-gap: ${({ theme }) => theme.spacing[1]};
   justify-content: start;
   column-gap: ${({ theme }) => theme.spacing[8]};
+  
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, max-content);
+  }
 `
 
 const ImageWrapper = styled.div`
@@ -20,6 +25,14 @@ const ImageWrapper = styled.div`
   width: 16.5rem;
   border-radius: 50%;
   overflow: hidden;
+  display: none;
+  visibility: hidden;
+
+  @media (min-width: 768px) {
+    display: block;
+    visibility: visible;
+    margin-bottom: ${({ theme }) => theme.spacing[3]};
+  }
 `
 
 const Contacts = ({ contacts, theme }) => {

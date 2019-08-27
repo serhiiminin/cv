@@ -36,8 +36,12 @@ const Value = styled.span`
 `;
 
 const LevelOuter = styled.div`
-  width: 67%;
+  width: 100%;
   background: ${({ theme }) => theme.color.textLighter};
+  
+  @media (min-width: 576px) {
+    width: 67%;
+  }
 `
 
 const LevelInner = styled.div`

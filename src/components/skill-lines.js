@@ -3,10 +3,10 @@ import PropTypes from "prop-types"
 import shortid from "shortid"
 import styled from "styled-components"
 
-const DefinitionList = styled.ul`
+const SkillsList = styled.ul`
   display: grid;
   list-style: none;
-  grid-template-columns: repeat(4, max-content);
+  grid-template-columns: repeat(2, max-content);
   grid-auto-rows: max-content;
   column-gap: ${({ theme }) => theme.spacing[9]};
   row-gap: ${({ theme }) => theme.spacing[3]};
@@ -15,6 +15,14 @@ const DefinitionList = styled.ul`
   
   @media print {
     grid-template-columns: repeat(3, max-content);
+  }
+  
+  @media (min-width: 576px) {
+    grid-template-columns: repeat(3, max-content);
+  }
+  
+  @media (min-width: 992px) {
+     grid-template-columns: repeat(4, max-content);
   }
 `
 
@@ -35,7 +43,7 @@ const DefinitionDataItem = styled.li`
 `
 
 const SkillLines = ({ data }) => (
-  <DefinitionList>
+  <SkillsList>
     {data.map(({ title, value }) => (
       <DefinitionItem key={shortid.generate()}>
         <DefinitionTitle>{title}</DefinitionTitle>
@@ -44,7 +52,7 @@ const SkillLines = ({ data }) => (
         ))}</DefinitionDataList>
       </DefinitionItem>
     ))}
-  </DefinitionList>
+  </SkillsList>
 )
 
 SkillLines.propTypes = {
