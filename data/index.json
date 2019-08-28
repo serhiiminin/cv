@@ -44,14 +44,14 @@
       "organizationRef": "https://brainberry.ua/",
       "period": "Jan 2018 - present",
       "position": "Frontend developer",
-      "description": "On this position I have proposed using “ducks” approach for separating redux store on features and after a long discussion our team decided to use “ducks”"
+      "description": "This is outstaffing company. We worked on a CRM for European medical conferences. The main stack was React/Redux/Antd. My responsibilities included creating UI, writing unit-tests and improving performance. At the same time, I had to maintain internal vanilla js libraries"
     },
     {
       "organization": "GS4B",
       "organizationRef": "https://gs4b.com.ua/",
       "period": "Feb 2017 - Dec 2017",
       "position": "Web developer",
-      "description": "There was a huge list of responsibilities. I worked with the most popular CMS creating new web-sites and solving issues on already existing ones"
+      "description": "The company provides a full range of Web services. My responsibilities included creating semantic markup, adjusting templates for various CMS, working with hostings. In my daily work, I used the following technologies: SCSS/LESS/Stylus, Gulp, jQuery, PHP"
     }
   ],
   "education": [
@@ -60,7 +60,7 @@
       "organizationRef": "http://infopulse-univer.com.ua/",
       "period": "Jul 2015 - Oct 2015",
       "position": "Student",
-      "description": "During this course, I have learned the basics of QA. The course included basic information about Scrum methodology, HTML, CSS, bash commands, and many others"
+      "description": "During this course, I have learned the basics of QA. The course included basic information about Scrum methodology, HTML, CSS, bash commands"
     },
     {
       "organization": "SNU",
