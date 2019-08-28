@@ -1,11 +1,10 @@
 import React from "react"
 import PropTypes from 'prop-types';
-import { FaUniversity } from "react-icons/fa"
 import Section from "./section"
 import DetailedLine from "./ditailed-line"
 
 const Education = ({ education }) => (
-  <Section title="Education" icon={<FaUniversity/>}>
+  <Section title="Education">
     {education.map(({ organization, organizationRef, period, position, description }) => (
       <DetailedLine
         key={organization}

@@ -29,13 +29,8 @@ const Title = styled.h2`
   font-weight: bold;
 `
 
-const TitleText = styled.span`
-  margin-left: ${({ theme, icon }) => icon ? theme.spacing[2] : 0};
-`
-
-const SectionCmp = ({ title, icon, children, titleRender }) => {
-  const TitleTextCmp = title && <TitleText icon={icon}>{title}</TitleText>
-  const TitleCmp = (icon || title) && <Title>{icon}{TitleTextCmp}</Title>
+const SectionCmp = ({ title, children, titleRender }) => {
+  const TitleCmp = title && <Title>{title}</Title>
 
   return (
     <Section>
@@ -46,7 +41,6 @@ const SectionCmp = ({ title, icon, children, titleRender }) => {
 }
 
 SectionCmp.propTypes = {
-  icon: PropTypes.node,
   title: PropTypes.string,
   titleRender: PropTypes.node,
   children: PropTypes.node.isRequired,
@@ -54,7 +48,6 @@ SectionCmp.propTypes = {
 
 SectionCmp.defaultProps = {
   titleRender: null,
-  icon: null,
   title: null,
 }
 

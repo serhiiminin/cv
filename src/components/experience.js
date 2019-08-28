@@ -1,11 +1,10 @@
 import React from "react"
 import PropTypes from 'prop-types';
-import { FaBriefcase } from "react-icons/fa"
 import DetailedLine from './ditailed-line';
 import Section from "./section"
 
 const Experience = ({ experience }) => (
-  <Section title="Experience" icon={<FaBriefcase/>}>
+  <Section title="Experience">
     {experience.map(({ organization, organizationRef, period, position, description }) => (
       <DetailedLine
         key={organization}

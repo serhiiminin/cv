@@ -1,11 +1,10 @@
 import React from "react"
 import PropTypes from 'prop-types';
-import { FaCode } from "react-icons/fa"
 import Section from "./section"
 import SkillLines from "./skill-lines"
 
 const Skills = ({ skills }) => (
-  <Section title="Skills" icon={<FaCode/>}>
+  <Section title="Skills">
     <SkillLines data={skills}/>
   </Section>
 )

@@ -1,11 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { FaGlobe } from "react-icons/fa"
 import Section from "./section"
 import LanguageLines from "./language-lines"
 
 const Languages = ({ languages }) => (
-  <Section title="Languages" icon={<FaGlobe/>}>
+  <Section title="Languages">
     <LanguageLines data={languages}/>
   </Section>
 )

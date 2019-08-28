@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { FaEdit } from "react-icons/fa"
 import Section from "./section"
 import styled from 'styled-components';
 
@@ -10,7 +9,7 @@ const SummaryText = styled.p`
 `;
 
 const Summary = ({ summary }) => (
-  <Section title="Summary" icon={<FaEdit/>}>
+  <Section title="Summary">
     <SummaryText>{summary}</SummaryText>
   </Section>
 )
