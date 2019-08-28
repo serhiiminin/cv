@@ -14,6 +14,10 @@ const ContactsInner = styled.div`
   row-gap: ${({ theme }) => theme.spacing[1]};
   justify-content: start;
   column-gap: ${({ theme }) => theme.spacing[8]};
+
+  @media print {
+    grid-template-columns: repeat(2, max-content);
+  }
   
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, max-content);
@@ -28,6 +32,11 @@ const ImageWrapper = styled.div`
   display: none;
   visibility: hidden;
 
+  @media print {
+    display: block;
+    visibility: visible;
+  }
+  
   @media (min-width: 768px) {
     display: block;
     visibility: visible;

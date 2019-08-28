@@ -12,6 +12,7 @@ const Section = styled.section`
   }
   
   @media print {
+    grid-template-columns: 20rem auto;
     margin-bottom: ${({ theme }) => theme.spacing[4]};
   }
 `
