@@ -44,14 +44,14 @@
       "organizationRef": "https://brainberry.ua/",
       "period": "Jan 2018 - present",
       "position": "Frontend developer",
-      "description": "This is outstaffing company. We worked on a CRM for European medical conferences. The main stack was React/Redux/Antd. My responsibilities included creating UI, writing unit-tests and improving performance. At the same time, I had to maintain internal vanilla js libraries"
+      "description": "This is an outstaffing company. We worked on a CRM for European medical conferences. The main stack was React/Redux/Antd. My responsibilities included creating UI, writing unit-tests and improving performance. At the same time, I had to maintain internal vanilla js libraries"
     },
     {
       "organization": "GS4B",
       "organizationRef": "https://gs4b.com.ua/",
       "period": "Feb 2017 - Dec 2017",
       "position": "Web developer",
-      "description": "The company provides a full range of Web services. My responsibilities included creating semantic markup, adjusting templates for various CMS, working with hostings. In my daily work, I used the following technologies: SCSS/LESS/Stylus, Gulp, jQuery, PHP"
+      "description": "The company provides a full range of Web services. My responsibilities included creating semantic markup, adjusting templates for various CMS, and working with hostings. In my daily work, I used the following technologies: SCSS/LESS/Stylus, Gulp, jQuery, PHP"
     }
   ],
   "education": [
@@ -67,7 +67,7 @@
       "organizationRef": "https://snu.edu.ua/",
       "period": "2010 - 2014",
       "position": "Bachelor",
-      "description": "Having awesome teaching stuff I got deeper into the mathematical analysis, physics of liquid and aerodynamics. I had experience working in a laboratory with real aerodynamic equipment"
+      "description": "Having awesome teaching stuff, I got deeper into the mathematical analysis, the physics of liquid and aerodynamics. I had experience of working in a laboratory with real aerodynamic equipment"
     }
   ],
   "languages": [

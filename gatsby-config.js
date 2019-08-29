@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: "/cv",
   siteMetadata: {
     title: `Serhii Minin`,
-    description: `I am a front-end developer with 2 years of experience`,
+    description: `Passionate frontend developer who has been coding for the Web since 2016`,
     author: `@serhiiminin`,
   },
   plugins: [
