@@ -19,23 +19,19 @@
     },
     {
       "title": "Libraries",
-      "value": ["React", "Redux (thunk)"]
+      "value": ["React", "Redux (thunk)", "Lodash", "MobX"]
     },
     {
-      "title": "Styling",
-      "value": ["CSS-in-JS", "SCSS/LESS", "BEM"]
-    },
-    {
-      "title": "Testing",
-      "value": ["Unit", "TDD"]
+      "title": "Methodologies",
+      "value": ["BEM", "CSS-in-JS", "Unit testing"]
     },
     {
       "title": "Others",
-      "value": ["git", "npm/yarn", "webpack", "RESTful APIs", "Gatsby", "Next.js"]
+      "value": ["git", "npm/yarn", "webpack", "RESTful APIs", "SCSS/LESS", "Jira", "Scrum"]
     },
     {
-      "title": "Familiar with",
-      "value": ["Node.js", "Express.js", "MongoDB", "jQuery", "Lodash", "Gulp"]
+      "title": "Familiar",
+      "value": ["Node.js", "Express.js", "MongoDB", "jQuery", "TDD", "Gulp", "Gatsby", "Next.js"]
     }
   ],
   "experience": [

@@ -25,8 +25,8 @@ const ContactsInner = styled.div`
 `
 
 const ImageWrapper = styled.div`
-  height: 16.5rem;
-  width: 16.5rem;
+  height: 16rem;
+  width: 16rem;
   border-radius: 50%;
   overflow: hidden;
   display: none;
@@ -53,7 +53,7 @@ const Contacts = ({ contacts, theme }) => {
         <Image/>
       </ImageWrapper>
     )}>
-      <>
+      <div>
         <TitlesBlock position={position} name={name}/>
         <ContactsInner>
           <ContactLines
@@ -78,7 +78,7 @@ const Contacts = ({ contacts, theme }) => {
             ]}
           />
         </ContactsInner>
-      </>
+      </div>
     </Section>
   )
 }

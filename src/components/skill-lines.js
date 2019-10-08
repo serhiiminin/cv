@@ -15,6 +15,9 @@ const SkillsList = styled.ul`
   
   @media print {
     grid-template-columns: repeat(3, max-content);
+    justify-content: space-between;
+    column-gap: ${({ theme }) => theme.spacing[2]};
+    row-gap: ${({ theme }) => theme.spacing[6]};
   }
   
   @media (min-width: 576px) {
@@ -22,7 +25,7 @@ const SkillsList = styled.ul`
   }
   
   @media (min-width: 992px) {
-     grid-template-columns: repeat(4, max-content);
+    grid-template-columns: repeat(5, max-content);
   }
 `
 

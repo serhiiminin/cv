@@ -4,7 +4,6 @@ import styled from "styled-components"
 import Anchor from "./anchor"
 
 const LineWrapper = styled.div`
-  margin-bottom: ${({ theme }) => theme.spacing[5]};
   display: grid;
   row-gap: ${({ theme }) => theme.spacing[0]};
 `

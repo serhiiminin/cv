@@ -5,21 +5,23 @@ import styled from "styled-components"
 const Section = styled.section`
   display: grid;
   grid-template-columns: 100%;
-  margin-bottom: ${({ theme }) => theme.spacing[8]};
+  margin-bottom: ${({ theme }) => theme.spacing[9]};
   
   @media (min-width: 768px) {
-     grid-template-columns: 20rem auto;
+     grid-template-columns: 19rem auto;
   }
   
   @media print {
-    grid-template-columns: 20rem auto;
-    margin-bottom: ${({ theme }) => theme.spacing[4]};
+    grid-template-columns: 19rem auto;
   }
 `
 
 const TitleWrapper = styled.div``
 
-const DetailsWrapper = styled.div``
+const DetailsWrapper = styled.div`
+  display: grid;
+  row-gap: ${({ theme }) => theme.spacing[4]};
+`
 
 const Title = styled.h2`
   display: flex;
