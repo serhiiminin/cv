@@ -4,9 +4,9 @@ import styled from "styled-components"
 
 const getLevelValue = level => ({
   Beginner: "20%",
-  'Pre Intermediate': "40%",
+  'Pre-Intermediate': "40%",
   Intermediate: "60%",
-  'Upper Intermediate': "80%",
+  'Upper-Intermediate': "80%",
   Fluent: "100%",
   Native: "100%",
 })[level] || 0

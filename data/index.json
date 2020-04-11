@@ -19,7 +19,7 @@
     },
     {
       "title": "Libraries",
-      "value": ["React", "Redux (thunk)", "Lodash", "MobX"]
+      "value": ["React", "Redux", "Lodash", "MobX", "jQuery"]
     },
     {
       "title": "Methodologies",
@@ -31,7 +31,7 @@
     },
     {
       "title": "Familiar",
-      "value": ["Node.js", "Express.js", "MongoDB", "jQuery", "TDD", "Gulp", "Gatsby", "Next.js"]
+      "value": ["Node.js", "Clojure", "Express.js", "MongoDB", "TDD", "SSR", "Gulp"]
     }
   ],
   "experience": [
@@ -45,7 +45,7 @@
     {
       "organization": "GS4B",
       "organizationRef": "https://gs4b.com.ua/",
-      "period": "Feb 2017 - Dec 2017",
+      "period": "Nov 2016 - Dec 2017",
       "position": "Web developer",
       "description": "The company provides a full range of Web services. My responsibilities included creating semantic markup, adjusting templates for various CMS, and working with hostings. In my daily work, I used the following technologies: SCSS/LESS/Stylus, Gulp, jQuery, PHP"
     }
@@ -69,7 +69,7 @@
   "languages": [
     {
       "title": "English",
-      "value": "Intermediate"
+      "value": "Upper-Intermediate"
     },
     {
       "title": "Ukrainian",
